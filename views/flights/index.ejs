@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Mongoose Flights</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/">Home</a>
+      <a href="/flights">All Flights</a>
+      <a href="/flights/new">New Flight</a>
+    </div>
+    <div class="flight-table">
+      <h1 id="hdr">All Flights</h1>
+      <table class="key">
+        <thread>
+          <tr>
+            <th>Airline</th>
+            <th>Airport</th>
+            <th>Flight No</th>
+            <th>Departure Date and Time</th>
+          </tr>
+        </thread>
+        <tbody>
+          <% flights.forEach(function(f) { %>
+          <tr class="content">
+            <td><%= f.airline %></td>
+            <td><%= f.airport %></td>
+            <td><%= f.flightNo %></td>
+            <td><%= f.departs %></td>
+            <td><a class="detail-btn" href="/flights/<%= f._id %>">DETAILS</a></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

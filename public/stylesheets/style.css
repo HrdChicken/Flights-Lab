@@ -1,0 +1,116 @@
+body {
+  padding: 50px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: rgb(131, 131, 131);
+}
+
+a {
+  color: rgb(98, 255, 0);
+  font-size: 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(65, 65, 65);
+}
+
+.nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.flight-table {
+  text-align: left;
+  display: grid;
+  grid-template-areas:
+    "hdr hdr hdr hdr"
+    "key key key key"
+    "content content content content";
+  grid-template-rows: 1fr 1fr 100%;
+  grid-template-columns: 2fr 1fr 1fr 6fr;
+  color: white;
+}
+
+#hdr {
+  grid-area: hdr;
+  color: rgb(255, 255, 255);
+}
+
+.flight-table .key {
+  grid-area: key;
+  font-size: 23px;
+  background-color: rgb(65, 65, 65);
+}
+
+.flight-table .content {
+  grid-area: content;
+  color: rgb(98, 255, 0);
+}
+
+.newpage {
+  color: white;
+  font-size: 30px;
+}
+
+.alltabs{
+  font-size: 22px;
+  font-family: 'Bebas Neue', cursive;
+  padding-left: 5px;
+}
+
+.detail-btn {
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+}
+.show-page{
+  color: rgb(98, 255, 0);
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  padding-top: 15px;
+}
+
+.white-text {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.destination-option {
+  color:white;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: rgb(65, 65, 65);
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-dest {
+  color: rgb(98, 255, 0);
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.date-input {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Bebas Neue', cursive;
+  padding-left: 5px;
+}
+
+.content{
+  color: rgb(98, 255, 0);
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive; 
+}
+
+.allbtns{
+  color:white;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: rgb(65, 65, 65);
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}

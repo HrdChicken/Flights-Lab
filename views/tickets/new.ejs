@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Mongoose Flights</title>
+  </head>
+  <body>
+    <div class='nav'>
+      <a href='/'>Home</a>
+      <a href='/flights'>All Flights</a>
+      <a href='/flights/new'>New Flight</a>
+    </div>
+    <div class='white-text'>Add Ticket</div>
+    <form method='POST' action='/flights/<%=flight._id%>/tickets'>
+    <div class='content'>Choose Row A-F And Seat 1-99 Then Price</div>
+      <label class='white-text'>Seat:</label>
+      <input class='alltabs' name="seat" required pattern="[A-F][1-9]\d?"/>
+      <label class='white-text'>Price:</label>
+      <input class='alltabs' name='price' required/>
+      <input class='allbtns' type='submit' value='Add Ticket'/>
+    </form>
+  </body>
+</html>
